@@ -49,3 +49,5 @@ After the firmware mod, macOS by default still does not accept touch even though
 [@glasses666](https://github.com/glasses666) [macos27-external-touch](https://github.com/glasses666/macos27-external-touch)
 
 [@MattBrookPro](https://github.com/MattBrookPro) for [this comment](https://github.com/ClassicOldSong/Apollo/pull/1624#issuecomment-6853049696)
+
+[@Myseri](https://github.com/Myseri) [xeneon-edge-multitouch-macos](https://github.com/Myseri/xeneon-edge-multitouch-macos)
