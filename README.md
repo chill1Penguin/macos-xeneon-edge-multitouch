@@ -7,11 +7,11 @@
 > **Use at your own risk. Your device may become bricked if you do something wrong or as a result of a bug.**
 
 ## Summary
-By default macOS does not receive the multitouch digizer HID events from the Corsair Xeneon Edge touchscreen. The touchscreen detects that the OS is not Windows/Linux through the way the USB string descriptors are enumerated.
+By default, macOS does not receive the multitouch digitizer HID events from the Corsair Xeneon Edge touchscreen. The touchscreen detects that the OS is not Windows/Linux through the way the USB string descriptors are enumerated.
 
 The touchscreen firmware has been modded (by modifying one RISC-V instruction) to bypass the string descriptor enumeration limitation.
 
-After the firmware mod, macOS by default still does not accept touch even though the HID multitouch reports come through due to the displayUUID property on the HID service not being set. Also, the HID descriptor does not include the "Confidence" bit, so touch on the macOS dock does not work. A utility has been developed for macOS to fix these issues.
+After the firmware mod, macOS by default still does not accept touch even though the HID multitouch reports come through due to the displayUUID property on the HID service not being set. Also, the HID descriptor does not include the "Confidence" bit, so touch on the macOS Dock does not work. A utility has been developed for macOS to fix these issues.
 
 ## Installation Instructions
 
