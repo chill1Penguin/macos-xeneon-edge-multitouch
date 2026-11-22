@@ -29,14 +29,15 @@ After the firmware mod, macOS by default still does not accept touch even though
 
 ### On macOS
 1. Build from source or download the release zip file and extract.
-2. Copy `xeneonedgehid.app` to `/Library/Application Support/family.hirst.xeneonedgehid` (the directory will need to be created).
+2. Extract and copy `xeneonedgehid.app` to `/Library/Application Support/family.hirst.xeneonedgehid` (the directory will need to be created).
 3. Copy `family.hirst.xeneonedgehid.plist` to `/Library/LaunchAgents`.
-4. Permissions may need to be manually enabled for `/Library/Application Support/family.hirst.xeneonedgehid/xeneonedgehid.app`.
-> - On macOS 27.3 Beta 2, Navigate to __Settings > Privacy & Security > System & App Protection Override__ and add the app to the list of apps. You will need to choose "Override System Protections" on the dialog that pops up and click "OK" for all the options.
-> - On macOS 27.2, add the app to __Settings > Privacy & Security > Accessibility__
+4. Ensure the plist is owned by root:wheel and has filemode 644 (`sudo chown root:wheel family.hirst.xeneonedgehid.plist` and `sudo chmod 644 family.hirst.xeneonedgehid.plist`).
 5. Reboot and enjoy!
 > [!NOTE]
 > Since the utility app is a launch agent, the touch screen may not operate until you login.
+> [!NOTE]
+> If the touchcreen does not work, permissions may need to be manually enabled for `/Library/Application Support/family.hirst.xeneonedgehid/xeneonedgehid.app`.
+> - On macOS 27.3 Beta 2, Navigate to __Settings > Privacy & Security > System & App Protection Override__ and add the app to the list of apps. You will need to choose "Override System Protections" on the dialog that pops up and click "OK" for all the options.
 
 ## Credits
 [Reddit user Sufficient_Divide687](https://www.reddit.com/user/Sufficient_Divide687/)'s info in [this](https://www.reddit.com/r/Corsair/comments/1xsathr/xeneon_edge_with_native_multitouch_on_macos/) post
